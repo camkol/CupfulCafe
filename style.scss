@@ -1,47 +1,47 @@
-body {
-  font-family: "Raleway", sans-serif;
-}
+$color_1: white;
+$color_2: #d6b47e;
+$font-family_1: "Raleway", sans-serif;
+$background-color_1: #d6b47e;
+$background-color_2: #ffffff;
 
+body {
+  font-family: $font-family_1;
+}
 h1 {
   width: 100%;
   font-weight: 300;
   text-align: center;
   font-size: 40px;
-  color: #d6b47e;
+  color: $color_2;
 }
-
 h2 {
   display: inline-block;
   text-align: center;
-  background-color: #d6b47e;
+  background-color: $background-color_1;
   padding: 3px 10px;
   margin: 5px;
   font-size: 1.75rem;
-  color: white;
+  color: $color_1;
 }
-
 .menu {
   border: 2px solid;
   text-align: center;
   width: 200px;
 }
-
 h3 {
   display: inline-block;
   font-weight: 800;
-  background-color: #ffffff;
+  background-color: $background-color_2;
   text-align: center;
   padding: 10px 25px;
-  color: #d6b47e;
+  color: $color_2;
 }
-
 .container {
   min-width: 775px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .hero {
   background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/cafe.jpg");
   background-size: cover;
@@ -52,63 +52,62 @@ h3 {
   align-items: center;
   text-align: center;
 }
-
 .supporting-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 45px 0 0 0;
+  div {
+    background-size: cover;
+    min-width: 450px;
+    min-height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+  }
 }
-.supporting-container div {
-  background-size: cover;
-  min-width: 450px;
-  min-height: 345px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 30px;
-}
-
 .upcoming {
   background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/events.jpg");
 }
-
 .roast {
   background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/roast.jpg");
 }
-
 #footer {
   text-align: center;
-  color: #d6b47e;
+  color: $color_2;
   font-weight: 300;
   width: 100%;
   font-size: 1.25rem;
 }
-
 @media screen and (max-width: 480px) {
   body {
     margin: 0;
+    .container {
+      min-width: 320px;
+      display: block;
+      .hero {
+        min-width: 320px;
+        min-height: 320px;
+        .hero-content {
+        }
+      }
+      .supporting-container {
+        display: block;
+        padding-top: 0;
+        .upcoming {
+          min-width: 320px;
+          min-height: 320px;
+          margin: 10px 0;
+        }
+        .roast {
+          margin: 0;
+          min-width: 320px;
+          min-height: 320px;
+        }
+      }
+      #footer {
+      }
+    }
   }
-  body .container {
-    min-width: 320px;
-    display: block;
-  }
-  body .container .hero {
-    min-width: 320px;
-    min-height: 320px;
-  }
-  body .container .supporting-container {
-    display: block;
-    padding-top: 0;
-  }
-  body .container .supporting-container .upcoming {
-    min-width: 320px;
-    min-height: 320px;
-    margin: 10px 0;
-  }
-  body .container .supporting-container .roast {
-    margin: 0;
-    min-width: 320px;
-    min-height: 320px;
-  }
-}/*# sourceMappingURL=style.css.map */
+}
