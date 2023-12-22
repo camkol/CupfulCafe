@@ -43,7 +43,7 @@ h3 {
   flex-wrap: wrap;
 }
 .hero {
-  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/cafe.jpg");
+  background-image: url("images/cafe.jpg");
   background-size: cover;
   min-width: 964px;
   min-height: 422px;
@@ -68,10 +68,10 @@ h3 {
   }
 }
 .upcoming {
-  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/events.jpg");
+  background-image: url("images/events.jpg");
 }
 .roast {
-  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/roast.jpg");
+  background-image: url("images/roast.jpg");
 }
 #footer {
   text-align: center;
@@ -89,8 +89,6 @@ h3 {
       .hero {
         min-width: 320px;
         min-height: 320px;
-        .hero-content {
-        }
       }
       .supporting-container {
         display: block;
@@ -105,8 +103,6 @@ h3 {
           min-width: 320px;
           min-height: 320px;
         }
-      }
-      #footer {
       }
     }
   }
